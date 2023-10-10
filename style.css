@@ -188,13 +188,15 @@ footer {
   font-size: 14px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 450px) {
   :root {
     --bg-url: url(./assets/bg-desktop.jpg);
+    --bg-url: url(./assets/bg-mobile.jpg);
   }
 
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
+    --bg-url: url(./assests/bg-mobile-light.jpg);
   }
 
 
