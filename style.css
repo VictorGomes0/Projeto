@@ -17,7 +17,7 @@ body {
   --cordotexto: black;
   --bg-url: url(./assets/bg-desktop-light.jpg);
   --cor-da-borda: rgba(0, 0, 0, 0.5);
-  --cor-de-fundo: rgba(0, 0, 0, 0.5);
+  --cor-de-fundo: rgba(142, 137, 137, 0.5);
   --cor-de-fundo-hover: rgba(255, 255, 255, 0.2);
   --cor-de-fundo-social: rgba(0, 0, 0, 0.1);
   --botao-tema-url: url(./assets/sun.svg);
@@ -81,11 +81,19 @@ body * {
   transform: translateY(-50%);
   z-index: 1;
   left: 0;
+  animation: deslizar-esquerda 0.2s;
 }
 
 .light #switch button{
-  right: 0;
-  left: initial;
+ animation: deslizar-direita 0.2s forwards;
+}
+
+.light #switch button:hover {
+  outline: 8px solid var(--cor-de-fundo);
+}
+
+#switch button:hover {
+  outline: 8px solid var(--cor-de-fundo-hover); 
 }
 
 #switch span{
@@ -192,6 +200,23 @@ footer {
 
 }
 
+@keyframes deslizar-direita {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes deslizar-esquerda {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
+}
 
 /* background-image: url(./assets/bg-mobile.jpg);
  brackground-repeat: no-repeat;
