@@ -1,6 +1,5 @@
 body {
   background: var(--bg-url) no-repeat top center/ cover;
-  height: 100vh;
 }
 
 :root{
@@ -188,15 +187,13 @@ footer {
   font-size: 14px;
 }
 
-@media (min-width: 450px) {
+@media (min-width: 700px) {
   :root {
     --bg-url: url(./assets/bg-desktop.jpg);
-    --bg-url: url(./assets/bg-mobile.jpg);
   }
 
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
-    --bg-url: url(./assests/bg-mobile-light.jpg);
   }
 
 
